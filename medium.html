@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Q1
+        // let x = { a: 1, b: 2 }
+        //  function arr(x){
+        //       return Object.entries(x)
+        //  }
+        //  console.log(arr(x));
+
+        //Q2
+        //         let a= [];
+        //          function arrayOfMultiples(num,length){
+        //             for(i=1;i<=length;i++){
+
+        //                 a.push(num*i);
+        //             }
+        //             return a
+        //          }    
+
+        //       let b= arrayOfMultiples(7,7)
+        // console.log(b);
+
+        //Q3
+
+        // let getBudgets =([
+        //   { name: "John", age: 21, budget: 23000 },
+        //   { name: "Steve",  age: 32, budget: 40000 },
+        //   { name: "Martin",  age: 16, budget: 2700 }
+        // ])
+
+        // let budget_price = getBudgets.reduce((total,value)=>
+        //     total+value.budget,0
+        // )
+        // console.log(budget_price);
+
+        // //Q4
+        // let avg = [ { name: "John", notes: [3, 5, 4]}];
+
+
+
+        // function average(avg,b,c){
+        //     b= avg[0].notes
+        //     c=0
+        //     for(i= 0;i<b.length;i++){
+        //         c +=  b[i]  
+        //     }
+        //     return c= (c/b.length)
+        // }
+        // console.log(`[{name: "John",Avg Note: ${average(avg)}}]`);
+
+        //Q5
+
+        //var length = console.log(str.length);
+        // let str2 =""
+        // function Cap(str) {
+
+
+        // const capitalLetters = str.split('').filter(char => char === char.toUpperCase()).join('');
+        // const lowercaseLetters = str.split('').filter(char => char === char.toLowerCase()).join('');
+        // const result = capitalLetters + lowercaseLetters;
+        // return result
+        // }
+        // var str = "hApPy";
+        //console.log(Cap(str));
+        // function cap(str){
+        //     let capitalLetters = " ";
+        //     let smallLetters = "";
+        //     for(let i=0;i<str.length;i++){
+        //         let char = str[i];
+        //         if(char >= "A" && char <= "Z"){
+        //             capitalLetters += char
+        //         }else if (char >= 'a' && char <= 'z'){
+        //             smallLetters += char
+        //         }
+        //     }
+        //     const result = capitalLetters + smallLetters;
+        //     return result
+        // }
+        // console.log(cap(str));
+
+        //Q6
+
+        // let b ={};
+        // let input = [1,6,3,1,5,9,7,2,1,9,3,7,8,9,10];
+        // target = 7;
+        // function duplicate(input,target) {
+        //     for(i=0;i<input.length;i++){
+        //       currentNumber = input[i];
+        //       if(currentNumber == target){
+        //          if(b[currentNumber]){
+        //             b[currentNumber]++
+        //          }else{
+        //             b[currentNumber]=1
+        //          }
+        //       }
+        //     }
+        // for (const number in b) {
+        //         console.log(`${number} present ${b[number]} times.`);
+        //     }
+        // }
+
+        //  console.log(duplicate(input,target));
+
+        //Q7
+
+        // function findLongestString(strings) {
+
+        //     let longestString = '';
+        //     for (let i = 0; i < strings.length; i++) {
+        //         const currentString = strings[i];
+        //         if (currentString.length > longestString.length) {
+
+        //             longestString = currentString;
+        //         }
+        //     }
+
+
+        //     return longestString;
+        // }
+
+
+        // const inputArray = ['nik', 'mikhil', 'Cow', 'Elephant'];
+        // const result = findLongestString(inputArray);
+        // console.log(result);
+            
+        // //Q8
+    // function higherduplicate(a){
+    //     let b = "";
+    //     var count = 0;
+    //     for(let i=0;i<a.length-1;i++){
+    //     if(!b.includes(a[i]))
+    //     {
+    //         b+=a[i]
+            
+    //     }
+    //     else{
+    //     console.log(count++);
+    //     }
+    // }
+    //     return b
+    // }
+    
+    // console.log(higherduplicate("Hii i am ram"));
+
+
+    // function mostmatchedchars(InputSTR){
+    //    let str = InputSTR.replace(/\s/g,'')
+    // }
+    // console.log(mostmatchedchars("Hii i am ram"));
+
+        //Q9
+
+
+        // let arr =  [5,3,5,2,1,1,7,3,5,6];
+        // function unique(arr){
+        //     const uniqueSet = new Set(arr);
+        //     const uniqueArray = [...uniqueSet]
+        //     return uniqueArray 
+        // }
+
+        // //console.log(x);
+
+        // let result = unique(arr);
+        // //console.log(result);
+        // let result1 = result.sort((a,b)=> b-a)
+        // console.log(result1);
+
+        // function unique(a){
+        //     let c = a.sort()
+        //     let b = [];
+        //     for(let i= c.length-1;i>0;i--)
+        //     {
+        //         if(!b.includes(c[i])){
+        //             b.push(c[i])
+        //         }
+        //     }
+        //     return b
+        // }
+
+        // console.log(unique([5,3,5,2,1,1,7,3,5,6]));
+        //Q10
+        // let input = "a+b-(9+c)=3";
+        // let str = "";
+        // for(let i =0;i<input.length;i++){
+        //     if(input[i]!==")" && input[i]!="(")
+        //     {
+        //         str += input[i]
+        //     }
+        // }
+        // console.log(str);
+
+        //Q11
+        // let a = ["Z","A","P","C","A","Z","K","N","C"];
+
+        // function duplicate(a){
+        //     const uniqueSet = new Set(a);
+        //     const uniqueArray = [...uniqueSet];
+        //     return uniqueArray
+        // }
+        // let result = duplicate(a);
+        // console.log(result.sort());
+
+    //    function duplicate(a){
+    //     let c= a.sort()
+    //     let b = []
+    //     for(let i=0;i<c.length-1;i++){
+    //         if(!b.includes(c[i])){
+    //             b.push(c[i])
+    //         }
+    //     }
+    //     return b
+    //    }
+    //    console.log(duplicate(["Z","A","P","C","A","Z","K","N","C"]));
+
+       
+    //     let a = ["Z", "A", "P", "C", "A", "Z", "K", "N", "C"];
+    //     let b = [];
+    //     for (var i = 0; i < a.length; i++) {
+    //          var isDuplicate = false;
+    //         for (var j = 0; j < b.length; j++) {
+    //             if (a[i] === b[j]) {
+    //                 isDuplicate = true;
+    //                 break;
+    //             }
+    //         }
+    //         if (!isDuplicate) {
+    //             b.push(a[i]);
+    //         }
+    //     }
+    //    let result =  b.sort()
+    //    console.log(result);
+
+        // duplicate(a)
+
+//Q12
+// function hell(subseq,arr){
+//     let subindex=0;
+//     for(i=0;i<arr.length;i++){
+       
+//         if(arr[i]===subseq[subindex]){
+//             subindex++;
+//         }
+//         if(subindex===subseq.length){
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+// let arr=[5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4];
+// let subseq1=[7, -1, 5, -3];
+// let subseq2= [7, -1, 4, -3];
+// let subseq3=[-1];
+// let subseq4=[13, -3, 4, 1];
+// console.log(hell(subseq1,arr));
+// console.log(hell(subseq2,arr));
+// console.log(hell(subseq3,arr));
+// console.log(hell(subseq3,arr));
+
+
+
+
+
+
+        //Q13
+
+
+        //  let arr = [1, 2, 2, 1, 3, 5, 1];
+        //  function duplicate(arr){
+        //     const uniqueSet = new Set(arr);
+        //     const uniqueArray = [...uniqueSet];
+        //     return uniqueArray
+        //   }
+        //   let result = duplicate(arr);
+        //   console.log(result.reduce((t,n)=>(t+n),0));
+
+    </script>
+</body>
+
+</html>
